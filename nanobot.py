@@ -21,4 +21,5 @@ async def on_message(message):
 		log = author + body
 		f.write(message.content)
 
+print(os.environ['NANOBOT_TOKEN'])
 bot.run(os.environ['NANOBOT_TOKEN'])
