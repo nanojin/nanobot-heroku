@@ -5,7 +5,7 @@ import json
 import asyncio
 
 # Configuration Setup
-bot = commands.Bot(command_prefix = '.')
+bot = commands.Bot(command_prefix = commands.when_mentioned_or('.'))
 client = discord.Client()
 
 @bot.event
